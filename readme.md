@@ -23,7 +23,7 @@ The following content must be written into the dockerfile.
 
 ```dockerfile
 FROM alpine:3.8
-LABEL Maintainer "Andreas Elser"
+LABEL Maintainer "Marvin Gfrörer"
 LABEL Version "1.0"
 LABEL Vendor "Balluff"
 LABEL Name "docker-json-editor"
