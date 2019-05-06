@@ -21,8 +21,6 @@ You can do this with `mkdir` or in the explorer.
 
 When the directory is created you have to create a new file named `Dockerfile`. 
 
-You can do this with `touch Dockerfile` or in the explorer.
-
 ### Dockerfile content
 
 You have to open the dockerfile with an editor. It is recommend to use VS Code.
