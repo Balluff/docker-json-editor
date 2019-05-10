@@ -8,7 +8,7 @@
 ## Run container from DockerHub
 
 ```
-docker run -dit --name json-editor -p 80:80 balluff/json-editor:latest
+docker run -dit --name json-editor --restart always -p 80:80 balluff/json-editor:latest
 ```
 
 ## Using Dockerfile for manual build
