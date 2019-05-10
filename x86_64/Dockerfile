@@ -2,6 +2,8 @@ FROM alpine:3.8
 
 LABEL Maintainer "Marvin Gfroerer"
 
+LABEL Version "1.0"
+
 RUN apk update && apk upgrade
 
 RUN apk add nodejs apache2 git 
