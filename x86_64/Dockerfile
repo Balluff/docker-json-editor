@@ -4,17 +4,13 @@ LABEL Maintainer "Marvin Gfroerer"
 
 LABEL Version "1.0"
 
-RUN mkdir balluff-ssl-cert
+RUN apk update && apk upgrade
 
-RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/*
+RUN apk add nodejs apache2 git ca-certificates && rm -rf /var/cache/apk/*
 
 COPY balluff-ssl-cert/cert/balluff_ca.crt /usr/local/share/ca-certificates/balluff_ca.crt
 
 RUN update-ca-certificates
-
-RUN apk update && apk upgrade
-
-RUN apk add nodejs apache2 git 
 
 RUN mkdir apachefiles && cd  apachefiles && git clone https://github.com/Balluff/json-editor.git
 
