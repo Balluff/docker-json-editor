@@ -2,7 +2,7 @@ FROM alpine:3.8
 
 LABEL Maintainer "Marvin Gfroerer"
 
-LABEL Version "1.0"
+LABEL Version "1.1"
 
 RUN apk update && apk upgrade
 
@@ -23,3 +23,4 @@ RUN mkdir /run/apache2
 EXPOSE 80
 
 ENTRYPOINT ["/usr/sbin/httpd","-D","FOREGROUND"]
+
