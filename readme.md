@@ -1,5 +1,6 @@
 # JSON Editor in a Docker container 
 
+
 ## Requirements
 
 - Docker installed
@@ -63,5 +64,5 @@ docker run -dit --name json-editor -p 80:80 apache-json-editor:latest
 
 With the command `docker ps` you can check if the container was started successfully. You should see a container named `json-editor` now.
 
-If you type in `localhost/` or `hostname/` in your browser you should see the JSON Editor site.
+If you type in `http://localhost/` or `http://hostname/` in your browser you should see the JSON Editor site.
 
